@@ -1,5 +1,5 @@
 # TODO:  Find a better way to separate build configs for ADP vs non-ADP devices
-ifneq ($(SONY_POWERHAL),true)
+ifneq ($(TARGET_POWERHAL_VARIANT),true)
   ifneq ($(TARGET_BOARD_AUTO),true)
     ifneq ($(filter msm8960 msm8974,$(TARGET_BOARD_PLATFORM)),)
       LOCAL_PATH := $(call my-dir)
